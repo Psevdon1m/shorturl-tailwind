@@ -591,10 +591,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -705,11 +701,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-red {
-  --tw-border-opacity: 1;
-  border-color: hsl(0 87% 67% / var(--tw-border-opacity));
 }
 
 .bg-cyan {
@@ -852,6 +843,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-red {
+  --tw-text-opacity: 1;
+  color: hsl(0 87% 67% / var(--tw-text-opacity));
+}
+
 .text-veryDarkViolet {
   --tw-text-opacity: 1;
   color: hsl(260 8% 14% / var(--tw-text-opacity));
@@ -860,11 +856,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity));
-}
-
-.text-red {
-  --tw-text-opacity: 1;
-  color: hsl(0 87% 67% / var(--tw-text-opacity));
 }
 
 .placeholder-yellow-500::-moz-placeholder {
@@ -880,6 +871,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder-yellow-500::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
+}
+
+#cta {
+  background-image: url('../images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .hover\:bg-cyanLight:hover {
@@ -957,8 +954,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 0.5rem;
   }
 
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
