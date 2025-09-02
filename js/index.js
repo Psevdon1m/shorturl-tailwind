@@ -1,7 +1,10 @@
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
 const form = document.getElementById("link-form");
 const input = document.getElementById("link-input");
 const error = document.getElementById("err-msg");
 
+btn.addEventListener("click", navToggle);
 form.addEventListener("submit", formSubmit);
 
 function formSubmit(e) {
@@ -17,4 +20,10 @@ function formSubmit(e) {
     input.classList.remove("border-red");
     alert("success");
   }
+}
+
+function navToggle() {
+  btn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
 }
